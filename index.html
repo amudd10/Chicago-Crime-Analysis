@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chicago Crime Analysis of 2022</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1 class="center">Chicago Crime Analysis of 2022</h1>
+		<h4 class="author"> Abishai Muddamalle</h4>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#data-preprocessing">I. Data Preprocessing</a></li>
+			<li><a href="#analysis-visualization">II. Analysis and Visualization</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section id="data-preprocessing">
+			<h2>Data Preprocessing</h2>
+			<p>1) Data reading</p>
+			<p>First, we import the dependencies we need (for data processing and visualization). I am using python to read in the data and the pandas library to read in the csv dataset</p>
+			<div class="sourcecode" style="width: 50%;">
+				<pre>
+					<code>
+						import pandas as pd
+						import csv
+						import matplotlib.pyplot as plt
+						import numpy as np
+						import seaborn as sns
+						from datetime import datetime
+						import os
+
+						crime_df = pd.read_csv("Resources/2022.csv")
+						crime_df.head()
+					</code>
+				</pre>
+			</div>
+			<p>2) Data exploration</p>
+		</section>		
+		<section id="analysis-visualization">
+			<h2>Analysis and Visualization</h2>
+			<section id="overview">
+				<h3>Overview</h3>
+				<p>In this analysis, we dive into the Chicago terrain. As Chicago has been commonly called "Chi-raq" or the "Murder Capital," here you can explore 4 levels of crime in which there were over 500+ instances of crimes reported.</p>
+				<p>Street, Apartment, Residential, and Sidewalk</p>
+			</section>
+			<section id="visualization1">
+				<h3>Visualization 1</h3>
+				<div class="visualization">
+					<img src="visualization1.png" alt="Visualization 1">
+					<p>Insert description of Visualization 1 here.</p>
+				</div>
+			</section>
+			<section id="visualization2">
+				<h3>Visualization 2</h3>
+				<div class="visualization">
+					<img src="visualization2.png" alt="Visualization 2">
+					<p>Insert description of Visualization 2 here.</p>
+				</div>
+			</section>
+			<section id="visualization3">
+				<h3>Visualization 3</h3>
+				<div class="visualization">
+					<img src="visualization3.png" alt="Visualization 3">
+					<p>Insert description of Visualization 3 here.</p>
+				</div>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Analysis</p>
+	</footer>
+</body>
+</html>
